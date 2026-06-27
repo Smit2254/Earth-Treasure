@@ -80,7 +80,7 @@ export default function Hero({ onExploreClick, onRequestQuoteClick }: HeroProps)
               
               <figure className="aspect-[16/10] sm:aspect-[16/9] lg:aspect-[4/3] w-full rounded-[14px] overflow-hidden">
                 <img
-                  src="/src/assets/images/hero_crystal_banner_1781424019643.jpg"
+                  src="/images/hero_crystal_banner_1781424019643.jpg"
                   alt="Premium Luxury Quartz and Emerald Crystals Earth Treasure Exporter Banner"
                   className="h-full w-full object-cover object-center transition-transform duration-10000 ease-out hover:scale-110"
                   referrerPolicy="no-referrer"

@@ -1,8 +1,5 @@
 import React from 'react';
 import { Compass, HeartHandshake, Eye, Target, CheckCircle2, Factory, ShieldCheck, Download } from 'lucide-react';
-import gstCertificate from '../assets/images/GST Certificate.pdf';
-import udyamCertificate from '../assets/images/Udyam Registration Certificate.pdf';
-import iecCertificate from '../assets/images/CDOPV1894A.pdf';
 
 export default function AboutUs() {
   return (
@@ -34,7 +31,7 @@ export default function AboutUs() {
             <div className='lg:col-span-5 relative'>
               <div className='relative border-4 border-[#D4AF37]/15 p-2 rounded-2xl bg-slate-50 shadow-2xl'>
                 <img
-                  src='/src/assets/images/factory_export_1781424069102.jpg'
+                  src='images/factory_export_1781424069102.jpg'
                   alt='Earth Treasure artisans auditing raw quartz geode for export compliance'
                   className='rounded-xl w-full object-cover aspect-[4/3] shadow-inner'
                   referrerPolicy='no-referrer'
@@ -243,7 +240,7 @@ export default function AboutUs() {
 
               <div className='mt-6 flex gap-3'>
                 <a
-                  href={iecCertificate}
+                  href='/images/CDOPV1894A.pdf'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='inline-flex items-center gap-2 rounded-full border border-[#D4AF37]/30 px-4 py-2 text-sm text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-all'
@@ -253,7 +250,7 @@ export default function AboutUs() {
                 </a>
 
                 <a
-                  href={iecCertificate}
+                  href='/images/CDOPV1894A.pdf'
                   download='EarthTreasure-IEC-Certificate.pdf'
                   className='inline-flex items-center gap-2 rounded-full bg-[#D4AF37] px-4 py-2 text-sm font-medium text-emerald-950 hover:bg-amber-400 transition-all'
                 >
@@ -280,7 +277,7 @@ export default function AboutUs() {
 
               <div className='mt-6 flex gap-3'>
                 <a
-                  href={gstCertificate}
+                  href='/images/GST Certificate.pdf'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='inline-flex items-center gap-2 rounded-full border border-[#D4AF37]/30 px-4 py-2 text-sm text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-all'
@@ -290,7 +287,7 @@ export default function AboutUs() {
                 </a>
 
                 <a
-                  href={gstCertificate}
+                  href='/images/GST Certificate.pdf'
                   download='EarthTreasure-GST-Certificate.pdf'
                   className='inline-flex items-center gap-2 rounded-full bg-[#D4AF37] px-4 py-2 text-sm font-medium text-emerald-950 hover:bg-amber-400 transition-all'
                 >
@@ -317,7 +314,7 @@ export default function AboutUs() {
 
               <div className='mt-6 flex gap-3'>
                 <a
-                  href={udyamCertificate}
+                  href='/images/Udyam Registration Certificate.pdf'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='inline-flex items-center gap-2 rounded-full border border-[#D4AF37]/30 px-4 py-2 text-sm text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-all'
@@ -327,7 +324,7 @@ export default function AboutUs() {
                 </a>
 
                 <a
-                  href={udyamCertificate}
+                  href='/images/Udyam Registration Certificate.pdf'
                   download='EarthTreasure-Udyam-Certificate.pdf'
                   className='inline-flex items-center gap-2 rounded-full bg-[#D4AF37] px-4 py-2 text-sm font-medium text-emerald-950 hover:bg-amber-400 transition-all'
                 >

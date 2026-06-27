@@ -55,7 +55,7 @@ export default function Header({
         {/* Brand Identity / Elegant Logo Representation */}
         <div onClick={() => handleNavClick('home')} className='flex cursor-pointer items-center'>
           <img
-            src='/src/assets/images/Logo.png'
+            src='/images/Logo.png'
             alt='Earth Treasure'
             className='h-14 w-auto object-contain drop-shadow-[0_0_10px_rgba(212,175,55,0.35)]'
           />
