@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
-import Hero from './components/Hero';
+import Hero2 from './components/Hero2';
 import CategoryShowcase from './components/CategoryShowcase';
 import ProductsSection from './components/ProductsSection';
 import InquiryModal from './components/InquiryModal';
@@ -103,7 +103,7 @@ export default function App() {
         {activeTab === 'home' && (
           <div className='animate-fade-in space-y-0 text-slate-800'>
             {/* HEROS SECTION */}
-            <Hero
+            <Hero2
               onExploreClick={() => handleSelectCategoryFromGrid('crystal-towers')}
               onRequestQuoteClick={() => setActiveTab('contact')}
             />
