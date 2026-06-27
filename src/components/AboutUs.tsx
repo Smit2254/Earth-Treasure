@@ -31,9 +31,9 @@ export default function AboutUs() {
             <div className='lg:col-span-5 relative'>
               <div className='relative border-4 border-[#D4AF37]/15 p-2 rounded-2xl bg-slate-50 shadow-2xl'>
                 <img
-                  src='images/factory_export_1781424069102.jpg'
+                  src='images/Factory_Image.png'
                   alt='Earth Treasure artisans auditing raw quartz geode for export compliance'
-                  className='rounded-xl w-full object-cover aspect-[4/3] shadow-inner'
+                  className='rounded-xl w-full object-cover aspect-4/3 shadow-inner'
                   referrerPolicy='no-referrer'
                 />
 

@@ -91,7 +91,7 @@ export const PRODUCTS: Product[] = [
     category: 'raw-crystals',
     crystalType: 'Emerald',
     size: '15 - 25 cm (custom sorting)',
-    moq: 10,
+    moq: 100,
     priceUSD: 145.0,
     image: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&q=80&w=800',
     description:
@@ -106,7 +106,7 @@ export const PRODUCTS: Product[] = [
     category: 'raw-crystals',
     crystalType: 'Citrine',
     size: '10 - 18 cm',
-    moq: 25,
+    moq: 100,
     priceUSD: 78.5,
     image: 'https://images.unsplash.com/photo-1596414704044-fcd6115984fe?auto=format&fit=crop&q=80&w=800',
     description:
@@ -121,7 +121,7 @@ export const PRODUCTS: Product[] = [
     category: 'raw-crystals',
     crystalType: 'Amethyst',
     size: '20 - 35 cm',
-    moq: 15,
+    moq: 100,
     priceUSD: 110.0,
     image: 'https://images.unsplash.com/photo-1515688594390-b649af70d282?auto=format&fit=crop&q=80&w=800',
     description:
@@ -138,7 +138,7 @@ export const PRODUCTS: Product[] = [
     category: 'crystal-towers',
     crystalType: 'Clear Quartz',
     size: '12 - 20 cm height',
-    moq: 50,
+    moq: 100,
     priceUSD: 45.0,
     image: '/images/crystal_towers_1781424039362.jpg',
     description:
@@ -168,7 +168,7 @@ export const PRODUCTS: Product[] = [
     category: 'crystal-towers',
     crystalType: 'Obsidian',
     size: '8 - 18 cm height',
-    moq: 50,
+    moq: 100,
     priceUSD: 24.5,
     image: 'https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?auto=format&fit=crop&q=80&w=800',
     description:
@@ -185,7 +185,7 @@ export const PRODUCTS: Product[] = [
     category: 'crystal-spheres',
     crystalType: 'Blue Lace Agate',
     size: '8 - 12 cm diameter',
-    moq: 20,
+    moq: 100,
     priceUSD: 95.0,
     image: '/images/crystal_spheres_1781424052980.jpg',
     description:
@@ -200,7 +200,7 @@ export const PRODUCTS: Product[] = [
     category: 'crystal-spheres',
     crystalType: 'Rose Quartz',
     size: '10 - 15 cm diameter',
-    moq: 30,
+    moq: 100,
     priceUSD: 64.0,
     image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=800',
     description:
@@ -217,7 +217,7 @@ export const PRODUCTS: Product[] = [
     category: 'crystal-clusters',
     crystalType: 'Pyrite',
     size: '15 - 22 cm width',
-    moq: 20,
+    moq: 100,
     priceUSD: 85.0,
     image: 'https://images.unsplash.com/photo-1601049676099-e7ed07d825b0?auto=format&fit=crop&q=80&w=800',
     description:
@@ -232,7 +232,7 @@ export const PRODUCTS: Product[] = [
     category: 'crystal-clusters',
     crystalType: 'Malachite',
     size: '10 - 18 cm',
-    moq: 15,
+    moq: 100,
     priceUSD: 145.0,
     image: 'https://images.unsplash.com/photo-1601049676099-e7ed07d825b0?auto=format&fit=crop&q=80&w=800',
     description:
@@ -249,7 +249,7 @@ export const PRODUCTS: Product[] = [
     category: 'healing-stones',
     crystalType: 'Multi-Stones',
     size: 'Standard 7-piece boxes',
-    moq: 200,
+    moq: 100,
     priceUSD: 18.5,
     image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=800',
     description:
@@ -283,7 +283,7 @@ export const PRODUCTS: Product[] = [
     category: 'crystal-carvings',
     crystalType: 'Clear Quartz',
     size: '15 cm height',
-    moq: 10,
+    moq: 100,
     priceUSD: 120.0,
     image: 'https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?auto=format&fit=crop&q=80&w=800',
     description:
@@ -300,7 +300,7 @@ export const PRODUCTS: Product[] = [
     category: 'crystal-home-decor',
     crystalType: 'Agate',
     size: '9 - 11 cm diameter (4pcs set)',
-    moq: 50,
+    moq: 100,
     priceUSD: 35.0,
     image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=800',
     description:
@@ -317,7 +317,7 @@ export const PRODUCTS: Product[] = [
     category: 'gemstone-products',
     crystalType: 'Green Aventurine',
     size: '14 cm length',
-    moq: 300,
+    moq: 100,
     priceUSD: 8.5,
     image: 'https://images.unsplash.com/photo-1601049676099-e7ed07d825b0?auto=format&fit=crop&q=80&w=800',
     description:
@@ -334,7 +334,7 @@ export const PRODUCTS: Product[] = [
     category: 'custom-crystal-products',
     crystalType: 'Amethyst',
     size: 'Custom heights (up to 2.2 meters)',
-    moq: 2,
+    moq: 100,
     priceUSD: 2400.0,
     image: 'https://images.unsplash.com/photo-1515688594390-b649af70d282?auto=format&fit=crop&q=80&w=800',
     description:
