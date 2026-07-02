@@ -111,15 +111,15 @@ export default function App() {
             {/* WHY CHOOSE EARTH TREASURE (B2B features) */}
             <section className='py-16 bg-white border-b border-slate-100' id='why-choose-us'>
               <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-                <div className='text-center max-w-2xl mx-auto space-y-3 mb-12'>
+                <div className='text-center max-w-3xl mx-auto space-y-3 mb-12'>
                   <p className='text-xs font-mono tracking-widest text-[#D4AF37] uppercase font-bold'>
                     Secure Export Infrastructure
                   </p>
-                  <h2 className='font-serif text-2xl md:text-3.5xl font-bold text-emerald-950 tracking-tight'>
+                  <h2 className='font-serif text-3xl md:text-3.5xl font-bold text-emerald-950 tracking-tight'>
                     Why Wholesalers Partner With Earth Treasure
                   </h2>
-                  <div className='h-[2px] w-12 bg-[#D4AF37] mx-auto opacity-75' />
-                  <p className='text-xs text-slate-500'>
+                  <div className='h-[2px] w-14 bg-[#D4AF37] mx-auto opacity-75' />
+                  <p className='text-sm text-slate-500'>
                     A multi-national supply chain requires complete accountability. We eliminate trade discrepancies at
                     every stage.
                   </p>
@@ -132,8 +132,8 @@ export default function App() {
                       <Building2 className='h-6 w-6' />
                     </div>
                     <div className='space-y-1.5'>
-                      <h4 className='font-serif text-sm font-bold text-emerald-950'>Direct Manufacturer</h4>
-                      <p className='text-xs text-slate-500 leading-relaxed'>
+                      <h4 className='font-serif text-lg font-bold text-emerald-950'>Direct Manufacturer</h4>
+                      <p className='text-sm text-slate-500 leading-relaxed'>
                         We operate fully integrated private mines and lapidary cutting facilities, bypassing middle
                         trading brokers to secure absolute lowest wholesale margins.
                       </p>
@@ -146,8 +146,8 @@ export default function App() {
                       <Globe2 className='h-6 w-6' />
                     </div>
                     <div className='space-y-1.5'>
-                      <h4 className='font-serif text-sm font-bold text-emerald-950'>Global Export Services</h4>
-                      <p className='text-xs text-slate-500 leading-relaxed'>
+                      <h4 className='font-serif text-lg font-bold text-emerald-950'>Global Export Services</h4>
+                      <p className='text-sm text-slate-500 leading-relaxed'>
                         Full customs assistance, marine transport bookings, Certificates of Origin, and SGS lapidary
                         assay reports structured properly for global jurisdictions.
                       </p>
@@ -160,8 +160,8 @@ export default function App() {
                       <ShieldCheck className='h-6 w-6' />
                     </div>
                     <div className='space-y-1.5'>
-                      <h4 className='font-serif text-sm font-bold text-emerald-950'>Premium Quality Crystals</h4>
-                      <p className='text-xs text-slate-500 leading-relaxed'>
+                      <h4 className='font-serif text-lg font-bold text-emerald-950'>Premium Quality Crystals</h4>
+                      <p className='text-sm text-slate-500 leading-relaxed'>
                         Every container load undergoes specialized gemological verification to ensure 100% natural
                         mineral authenticity. We never accept synthetic materials.
                       </p>
@@ -174,8 +174,8 @@ export default function App() {
                       <Coins className='h-6 w-6' />
                     </div>
                     <div className='space-y-1.5'>
-                      <h4 className='font-serif text-sm font-bold text-emerald-950'>Competitive Wholesale Pricing</h4>
-                      <p className='text-xs text-slate-500 leading-relaxed'>
+                      <h4 className='font-serif text-lg font-bold text-emerald-950'>Competitive Wholesale Pricing</h4>
+                      <p className='text-sm text-slate-500 leading-relaxed'>
                         Generous bulk price-tier structures. Scaled bulk container-loads secure exclusive discounts with
                         tailored payment plans for verified trade partners.
                       </p>
@@ -225,7 +225,7 @@ export default function App() {
                       Curated Hot Sellers
                     </p>
                     <h2 className='font-serif text-2xl md:text-3.5xl font-bold text-emerald-950 tracking-tight'>
-                      BBest Selling Wholesale Products
+                      Best Selling Wholesale Products
                     </h2>
                   </div>
                   <button
@@ -267,20 +267,20 @@ export default function App() {
 
                         <div className='pt-2.5 border-t border-slate-100 mt-2 space-y-3'>
                           <div className='flex justify-between items-baseline'>
-                            <span className='text-[9px] text-slate-400 font-mono uppercase'>Wholesale Price:</span>
+                            <span className='text-[10px] text-slate-400 font-mono uppercase'>Wholesale Price:</span>
                             <span className='text-xs font-bold text-[#D4AF37] font-mono'>
                               ${prod.priceUSD.toFixed(2)} USD
                             </span>
                           </div>
 
                           {/* Required Export Logistics Note inside carousel too */}
-                          <p className='text-[8px] text-slate-400 leading-normal italic'>
+                          <p className='text-[10px] leading-relaxed text-slate-400 italic'>
                             Shipping and export packaging calculate on request based on destination.
                           </p>
 
                           <button
                             onClick={() => handleQuickInquiry(prod)}
-                            className='w-full rounded-lg bg-emerald-950 hover:bg-emerald-900 text-white py-2 text-[10px] font-bold uppercase tracking-wider text-center transition'
+                            className='w-full rounded-lg bg-emerald-950 hover:bg-emerald-900 text-white py-2 text-xs font-bold uppercase tracking-wider text-center transition'
                           >
                             Quick Inquiry
                           </button>
@@ -360,7 +360,7 @@ export default function App() {
                   <div className='relative'>
                     <div className='relative border-2 border-[#D4AF37]/30 rounded-2xl p-[3px] bg-slate-50 shadow-xl overflow-hidden'>
                       <img
-                        src='/src/assets/images/factory_export_1781424069102.jpg'
+                        src='/images/factory_export_1781424069102.jpg'
                         alt='Master craftsman examining large raw geode for shipping'
                         className='rounded-xl w-full object-cover aspect-[4/3] pointer-events-none'
                         referrerPolicy='no-referrer'
@@ -433,17 +433,17 @@ export default function App() {
 
                       <div className='grid gap-3 sm:grid-cols-2 text-left' id='active-cargo-blocks'>
                         <div className='p-3.5 rounded-lg bg-emerald-950 border border-emerald-900 space-y-1 hover:border-cyan-500 duration-200'>
-                          <p className='text-[10px] text-cyan-400 font-mono'>USA CUSTOMS CLEARANCE DECLARED</p>
+                          <p className='text-xs text-cyan-400 font-mono'>USA CUSTOMS CLEARANCE DECLARED</p>
                           <h4 className='text-xs font-bold font-serif text-white'>Consignment 781-A (12 Tons)</h4>
-                          <p className='text-[10px] text-slate-400'>
+                          <p className='text-xs text-slate-400'>
                             Raw Geode matrices and towers bound for New York Harbor.
                           </p>
                         </div>
 
                         <div className='p-3.5 rounded-lg bg-emerald-950 border border-emerald-900 space-y-1 hover:border-[#D4AF37] duration-200'>
-                          <p className='text-[10px] text-[#D4AF37] font-mono'>HAMBURG PORT COMPLIANT</p>
+                          <p className='text-xs text-[#D4AF37] font-mono'>HAMBURG PORT COMPLIANT</p>
                           <h4 className='text-xs font-bold font-serif text-white'>Consignment 841-K (5,000 sets)</h4>
-                          <p className='text-[10px] text-slate-400'>
+                          <p className='text-xs text-slate-400'>
                             Polished amethyst chakra boxes locked with ISPM-15 packaging.
                           </p>
                         </div>
@@ -497,8 +497,8 @@ export default function App() {
                         />
                         <div>
                           <h4 className='text-xs font-bold text-emerald-950'>{rev.author}</h4>
-                          <p className='text-[10px] text-slate-500 font-mono leading-none mt-0.5'>{rev.role}</p>
-                          <p className='text-[9px] text-[#D4AF37] font-semibold tracking-wide uppercase mt-1'>
+                          <p className='text-xs text-slate-500 font-mono leading-none mt-0.5'>{rev.role}</p>
+                          <p className='text-[10px] text-[#D4AF37] font-semibold tracking-wide uppercase mt-1'>
                             {rev.company}
                           </p>
                         </div>

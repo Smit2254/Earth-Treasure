@@ -40,11 +40,11 @@ export default function AboutUs() {
                 <div className='absolute -bottom-4 -right-4 rounded-lg bg-emerald-950 text-white p-4 border border-[#D4AF37]/30 shadow-xl max-w-xs text-left'>
                   <div className='flex items-center gap-1'>
                     <Factory className='h-4.5 w-4.5 text-[#D4AF37] shrink-0' />
-                    <span className='text-[10px] font-mono text-[#D4AF37] uppercase tracking-wider'>
+                    <span className='text-xs font-mono text-[#D4AF37] uppercase tracking-wider'>
                       QC Certification Desk
                     </span>
                   </div>
-                  <p className='text-[11px] text-slate-300 mt-1'>
+                  <p className='text-xs text-slate-300 mt-1'>
                     Multi-stage ultrasonic cleansing &amp; mineral safety inspection.
                   </p>
                 </div>
@@ -122,7 +122,7 @@ export default function AboutUs() {
             </span>
             <h2 className='font-serif text-2xl md:text-3xl font-bold'>Uncompromising Quality Compliance</h2>
             <div className='h-[2px] w-12 bg-[#D4AF37] mx-auto' />
-            <p className='text-xs text-slate-300'>
+            <p className='text-sm text-slate-300'>
               Bulk mineral shipments require highly calculated safety procedures. Because of this, Earth Treasure
               maintains complete oversight over four distinct structural pillars of excellence.
             </p>
@@ -135,13 +135,13 @@ export default function AboutUs() {
                 <div className='inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-tr from-amber-500/10 to-amber-500/20 text-[#D4AF37] border border-[#D4AF37]/20'>
                   <HeartHandshake className='h-5 w-5' />
                 </div>
-                <h3 className='font-serif text-sm font-bold text-slate-100'>1. Ethical Mine Sourcing</h3>
+                <h3 className='font-serif text-lg font-bold text-slate-100'>1. Ethical Mine Sourcing</h3>
               </div>
-              <p className='text-xs text-slate-400 mt-2 leading-relaxed'>
+              <p className='text-sm text-slate-400 mt-2 leading-relaxed'>
                 We work directly with authorized, eco-conscious cooperatives near mineral veins, verifying fair-wage
                 conditions and carbon-conscious earth extraction procedures.
               </p>
-              <div className='text-[10px] font-mono text-emerald-400 pt-3 border-t border-emerald-900 uppercase'>
+              <div className='text-xs font-mono text-emerald-400 pt-3 border-t border-emerald-900 uppercase'>
                 Minerals audited and compliant
               </div>
             </div>
@@ -152,13 +152,13 @@ export default function AboutUs() {
                 <div className='inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-tr from-cyan-500/10 to-cyan-500/20 text-cyan-400 border border-cyan-500/20'>
                   <ShieldCheck className='h-5 w-5' />
                 </div>
-                <h3 className='font-serif text-sm font-bold text-slate-100'>2. Lapidary Inspection</h3>
+                <h3 className='font-serif text-lg font-bold text-slate-100'>2. Lapidary Inspection</h3>
               </div>
-              <p className='text-xs text-slate-400 mt-2 leading-relaxed'>
+              <p className='text-sm text-slate-400 mt-2 leading-relaxed'>
                 Each shipment is certified by advanced gemological specialists using refractive testing. This guarantees
                 that only authentic gemstones reach your distribution depots.
               </p>
-              <div className='text-[10px] font-mono text-cyan-400 pt-3 border-t border-emerald-900 uppercase'>
+              <div className='text-xs font-mono text-cyan-400 pt-3 border-t border-emerald-900 uppercase'>
                 100% genuine guaranteed
               </div>
             </div>
@@ -169,13 +169,13 @@ export default function AboutUs() {
                 <div className='inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-tr from-purple-500/10 to-purple-500/20 text-purple-400 border border-purple-500/20'>
                   <Factory className='h-5 w-5' />
                 </div>
-                <h3 className='font-serif text-sm font-bold text-slate-100'>3. Safe Protective Packing</h3>
+                <h3 className='font-serif text-lg font-bold text-slate-100'>3. Safe Protective Packing</h3>
               </div>
-              <p className='text-xs text-slate-400 mt-2 leading-relaxed'>
+              <p className='text-sm text-slate-400 mt-2 leading-relaxed'>
                 Every single piece is bubble-wrapped, layered with high-impact foam, and shipped inside certified
                 ISPM-15 wooden storage structures that survive multi-port ship transfers.
               </p>
-              <div className='text-[10px] font-mono text-purple-400 pt-3 border-t border-emerald-900 uppercase'>
+              <div className='text-xs font-mono text-purple-400 pt-3 border-t border-emerald-900 uppercase'>
                 Zero-breakage ocean shipping
               </div>
             </div>
@@ -186,13 +186,13 @@ export default function AboutUs() {
                 <div className='inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-tr from-amber-500/10 to-amber-500/20 text-[#D4AF37] border border-[#D4AF37]/20'>
                   <Compass className='h-5 w-5' />
                 </div>
-                <h3 className='font-serif text-sm font-bold text-slate-100'>4. Customs &amp; Documentation</h3>
+                <h3 className='font-serif text-lg font-bold text-slate-100'>4. Customs &amp; Documentation</h3>
               </div>
-              <p className='text-xs text-slate-400 mt-2 leading-relaxed'>
+              <p className='text-sm text-slate-400 mt-2 leading-relaxed'>
                 Our logistics experts manage ocean freight, certificates of origin, SGS test reports, and customs
                 documentation tailored precisely to any importing nation.
               </p>
-              <div className='text-[10px] font-mono text-[#D4AF37] pt-3 border-t border-emerald-900 uppercase'>
+              <div className='text-xs font-mono text-[#D4AF37] pt-3 border-t border-emerald-900 uppercase'>
                 Hassle-free customs broker
               </div>
             </div>
@@ -361,10 +361,10 @@ export default function AboutUs() {
       <section className='py-16 bg-white text-slate-800' id='benefits-section'>
         <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
           <div className='text-center max-w-2xl mx-auto space-y-3 mb-10'>
-            <h2 className='font-serif text-2xl md:text-3.5xl font-bold text-emerald-950 tracking-tight'>
+            <h2 className='font-serif text-2xl md:text-4xl font-bold text-emerald-950 tracking-tight'>
               A Strategic B2B Ally for Your Business
             </h2>
-            <p className='text-xs text-slate-500'>
+            <p className='text-sm text-slate-500'>
               Why international distributors form decadal contracts with Earth Treasure.
             </p>
           </div>
@@ -373,8 +373,8 @@ export default function AboutUs() {
             <div className='flex gap-4 p-5 rounded-xl border border-slate-100 bg-slate-50/85'>
               <CheckCircle2 className='h-5 w-5 text-[#D4AF37] shrink-0 mt-0.5' />
               <div className='text-left space-y-1'>
-                <h4 className='font-bold text-emerald-950 text-sm font-serif'>Direct Mine Pricing</h4>
-                <p className='text-xs text-slate-500'>
+                <h4 className='font-bold text-emerald-950 text-lg font-serif'>Direct Mine Pricing</h4>
+                <p className='text-sm text-slate-500'>
                   By completely removing intermediate trading partners, we offer margins that are up to 35% lower than
                   normal wholesale brokers.
                 </p>
@@ -384,8 +384,8 @@ export default function AboutUs() {
             <div className='flex gap-4 p-5 rounded-xl border border-slate-100 bg-slate-50/85'>
               <CheckCircle2 className='h-5 w-5 text-cyan-500 shrink-0 mt-0.5' />
               <div className='text-left space-y-1'>
-                <h4 className='font-bold text-emerald-950 text-sm font-serif'>Verifiable Certifications</h4>
-                <p className='text-xs text-slate-500'>
+                <h4 className='font-bold text-emerald-950 text-lg font-serif'>Verifiable Certifications</h4>
+                <p className='text-sm text-slate-500'>
                   Authentic materials backed by certified lab reports, mineral audits, and certificates of origin for
                   all countries served.
                 </p>
@@ -395,8 +395,8 @@ export default function AboutUs() {
             <div className='flex gap-4 p-5 rounded-xl border border-slate-100 bg-slate-50/85'>
               <CheckCircle2 className='h-5 w-5 text-purple-500 shrink-0 mt-0.5' />
               <div className='text-left space-y-1'>
-                <h4 className='font-bold text-emerald-950 text-sm font-serif'>Low B2B Minimums</h4>
-                <p className='text-xs text-slate-500'>
+                <h4 className='font-bold text-emerald-950 text-lg font-serif'>Low B2B Minimums</h4>
+                <p className='text-sm text-slate-500'>
                   Flexible starter test consignments allow emerging spas and wellness organizations to test user
                   reception before larger bulk orders.
                 </p>

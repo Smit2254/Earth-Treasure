@@ -1,17 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Product, Category } from '../types';
-import {
-  Filter,
-  SlidersHorizontal,
-  ShoppingBag,
-  MessageSquare,
-  Plus,
-  Check,
-  MapPin,
-  Layers,
-  RotateCcw,
-  Volume2,
-} from 'lucide-react';
+import { Filter, SlidersHorizontal, ShoppingBag, MessageSquare, Plus, Check, MapPin, RotateCcw } from 'lucide-react';
 
 interface ProductsSectionProps {
   products: Product[];
@@ -108,7 +97,7 @@ export default function ProductsSection({
         {/* Secondary floating-like top bar with catalog stats and Inquiry Bag trigger */}
         <div className='flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 mb-8 bg-emerald-950 text-white rounded-2xl border border-[#D4AF37]/35 shadow-xl'>
           <div className='space-y-1 text-left'>
-            <span className='text-[10px] font-mono tracking-widest text-[#D4AF37] uppercase'>
+            <span className='text-xs font-mono tracking-widest text-[#D4AF37] uppercase'>
               Custom Wholesale Procurement Block
             </span>
             <h3 className='font-serif text-lg font-bold'>Earth Treasure Master Catalog</h3>
@@ -321,7 +310,7 @@ export default function ProductsSection({
                     {/* Badge Indicator overlays */}
                     <div className='absolute top-3 left-3 z-10 flex flex-col gap-1'>
                       <span
-                        className={`rounded-md px-2 py-1 text-[9px] font-bold text-white tracking-widest uppercase ${
+                        className={`rounded-md px-2 py-1 text-[10px] font-bold text-white tracking-widest uppercase ${
                           product.availability === 'In Stock'
                             ? 'bg-emerald-900'
                             : product.availability === 'Made to Order'
@@ -332,7 +321,7 @@ export default function ProductsSection({
                         {product.availability}
                       </span>
                       {product.purity && (
-                        <span className='rounded-md bg-emerald-950/80 backdrop-blur-sm border border-[#D4AF37]/30 px-2 py-0.5 text-[8px] font-mono text-[#D4AF37]'>
+                        <span className='rounded-md bg-emerald-950/80 backdrop-blur-sm border border-[#D4AF37]/30 px-2 py-0.5 text-[10px] font-mono text-[#D4AF37]'>
                           {product.purity}
                         </span>
                       )}
@@ -343,6 +332,10 @@ export default function ProductsSection({
                       <img
                         src={product.image}
                         alt={product.name}
+                        loading='lazy'
+                        decoding='async'
+                        width={400}
+                        height={400}
                         className='h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105'
                         referrerPolicy='no-referrer'
                       />
@@ -363,18 +356,18 @@ export default function ProductsSection({
 
                     {/* Product Specs Description Area */}
                     <div className='p-4 space-y-2 flex-grow text-left'>
-                      <p className='text-[10px] font-mono text-slate-400 uppercase tracking-widest flex items-center gap-1'>
+                      <p className='text-xs font-mono text-slate-400 uppercase tracking-widest flex items-center gap-1'>
                         <MapPin className='h-3 w-3 text-cyan-500' />
                         <span>Origin: {product.origin}</span>
                       </p>
 
-                      <h4 className='font-serif text-sm font-bold text-slate-800 line-clamp-1 group-hover:text-emerald-950'>
+                      <h4 className='font-serif text-base font-bold text-slate-800 line-clamp-1 group-hover:text-emerald-950'>
                         {product.name}
                       </h4>
                       <p className='text-xs text-slate-500 line-clamp-3 leading-relaxed'>{product.description}</p>
 
                       {/* Technical Specs Detail Rows */}
-                      <div className='grid grid-cols-2 gap-2 bg-slate-50 p-2 rounded-lg border border-slate-100 text-[10px] font-mono mt-2'>
+                      <div className='grid grid-cols-2 gap-2 bg-slate-50 p-2 rounded-lg border border-slate-100 text-xs font-mono mt-2'>
                         <div>
                           <p className='text-slate-400'>Spec / Size</p>
                           <p className='text-slate-700 font-bold line-clamp-1'>{product.size}</p>
@@ -390,17 +383,17 @@ export default function ProductsSection({
                     <div className='border-t border-slate-100 p-4 space-y-3 bg-slate-50/50'>
                       {/* Price Block */}
                       <div className='flex items-baseline justify-between'>
-                        <span className='text-[10px] font-mono text-slate-400 uppercase'>Unit Price:</span>
+                        <span className='text-xs font-mono text-slate-400 uppercase'>Unit Price:</span>
                         <div className='text-right'>
-                          <span className='text-sm font-bold text-emerald-900 font-serif'>
+                          <span className='text-lg font-bold text-emerald-900 font-serif'>
                             ${product.priceUSD.toFixed(2)}
                           </span>
-                          <span className='text-[10px] text-slate-500 font-mono'> / FOB USD</span>
+                          <span className='text-xs text-slate-500 font-mono'> / FOB USD</span>
                         </div>
                       </div>
 
                       {/* Explicit required export legal notice directly inside the product card footer */}
-                      <div className='text-[8px] leading-tight text-slate-400 font-sans border-t border-slate-200/50 pt-2.5 italic'>
+                      <div className='text-[10px] leading-relaxed text-slate-500 font-sans border-t border-slate-200/50 pt-2.5 italic'>
                         Export, shipping, customs duties, taxes, and handling charges are additional and will be quoted
                         separately based on destination country and order quantity.
                       </div>

@@ -34,16 +34,15 @@ export default function CategoryShowcase({ categories, onSelectCategory }: Categ
               id={`cat-card-${category.id}`}
             >
               {/* Image box */}
-              <div className='relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-emerald-900'>
+              <div className='relative aspect-[5/6] w-full overflow-hidden rounded-xl bg-emerald-900'>
                 <img
                   src={category.image}
                   alt={category.name}
+                  loading='lazy'
+                  decoding='async'
                   className='h-full w-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105'
                   referrerPolicy='no-referrer'
                 />
-
-                {/* Dark luxury gradient overlays */}
-                <div className='absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/20 to-transparent opacity-80' />
 
                 {/* Top decorative gold corner */}
                 <div className='absolute top-3 right-3 bg-emerald-950/80 border border-[#D4AF37]/30 text-[#D4AF37] p-2 rounded-lg transition-all group-hover:bg-[#D4AF37] group-hover:text-emerald-950 shadow-md'>
