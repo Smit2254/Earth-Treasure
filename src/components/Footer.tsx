@@ -141,7 +141,7 @@ export default function Footer({ categories, setActiveTab, setSelectedCategory }
           <div className='space-y-2.5 text-xs text-slate-300'>
             <p className='flex items-center gap-1.5'>
               <Mail className='h-3.5 w-3.5 text-[#D4AF37]' />
-              <a href='mailto:smitbhavsar23@gmail.com'>smitbhavsar23@gmail.com</a>
+              <a href='mailto:aaminagate92@gmail.com'>aaminagate92@gmail.com</a>
             </p>
             <p className='flex items-center gap-1.5'>
               <Phone className='h-3.5 w-3.5 text-cyan-400' />

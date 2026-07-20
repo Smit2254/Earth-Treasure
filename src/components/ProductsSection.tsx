@@ -256,7 +256,7 @@ export default function ProductsSection({
                 <p className='text-[10px] font-mono text-[#D4AF37] tracking-wider uppercase'>Procurement Lead</p>
                 <p className='text-xs text-slate-200'>Got an architectural or high-volume project specification?</p>
                 <div className='text-xs font-mono bg-[#D4AF37]/10 border border-[#D4AF37]/20 rounded p-1.5 text-center text-[#D4AF37]'>
-                  smitbhavsar23@gmail.com
+                  aaminagate92@gmail.com
                 </div>
               </div>
             </div>

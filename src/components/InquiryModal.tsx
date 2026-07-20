@@ -86,7 +86,7 @@ export default function InquiryModal({
     if (submitType === 'whatsapp') {
       // Direct WhatsApp dispatch with prefilled corporate details
       // Using standard phone template prefilled with earth treasure details
-      const encodedUrl = `https://wa.me/919724472079?text=${compiledText}`;
+      const encodedUrl = `https://wa.me/9023473345?text=${compiledText}`;
       window.open(encodedUrl, '_blank');
     } else {
       // Simulate highly secure email notification dispatch
@@ -376,13 +376,6 @@ export default function InquiryModal({
                 >
                   <MessageSquare className='h-4.5 w-4.5 text-white' />
                   <span>WhatsApp Trade Inquiry</span>
-                </button>
-                <button
-                  type='submit'
-                  className='flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:brightness-110 px-4 py-3 text-xs font-bold uppercase tracking-wider text-emerald-950 transition-all font-sans shadow-md'
-                >
-                  <Mail className='h-4.5 w-4.5' />
-                  <span>Submit Corporate RFQ</span>
                 </button>
               </div>
             </form>

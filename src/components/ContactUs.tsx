@@ -27,28 +27,43 @@ export default function ContactUs({ categories }: ContactUsProps) {
 
   const handleFormSubmit = (e: React.FormEvent, type: 'general' | 'pricing') => {
     e.preventDefault();
+
     if (!formData.fullName || !formData.email || !formData.companyName) {
       alert('Please fill in the required corporate fields.');
       return;
     }
 
-    setFormSubmitted(true);
-    setTimeout(() => {
-      setFormSubmitted(false);
-      setFormData({
-        fullName: '',
-        companyName: '',
-        email: '',
-        phone: '',
-        country: '',
-        categoryInterested: 'raw-crystals',
-        quantityRequirement: '',
-        message: '',
-      });
-      alert(
-        `Wholesale ${type === 'pricing' ? 'Pricing RFQ' : 'Trade Inquiry'} registered! Our export experts will process your country tariff requirements and dispatch our PDF catalogue and quotation sheets shortly.`,
-      );
-    }, 1500);
+    const message = `*${type === 'pricing' ? 'Wholesale Pricing Request' : 'Trade Inquiry'}*
+
+👤 Full Name: ${formData.fullName}
+🏢 Company: ${formData.companyName}
+📧 Email: ${formData.email}
+📱 WhatsApp: ${formData.phone}
+🌍 Country: ${formData.country}
+
+📦 Product Category: ${formData.categoryInterested}
+📊 Quantity Required: ${formData.quantityRequirement}
+
+📝 Message:
+${formData.message}`;
+
+    const phoneNumber = '919023473345'; // Your WhatsApp number without +
+
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappUrl, '_blank');
+
+    // Optional: Clear the form after opening WhatsApp
+    setFormData({
+      fullName: '',
+      companyName: '',
+      email: '',
+      phone: '',
+      country: '',
+      categoryInterested: 'raw-crystals',
+      quantityRequirement: '',
+      message: '',
+    });
   };
 
   return (
@@ -115,7 +130,7 @@ export default function ContactUs({ categories }: ContactUsProps) {
                   </div>
                   <div>
                     <h4 className='text-xs font-mono tracking-widest text-[#D4AF37] uppercase'>Export Email Desk</h4>
-                    <p className='text-sm text-slate-200 mt-1 font-mono'>smitbhavsar23@gmail.com</p>
+                    <p className='text-sm text-slate-200 mt-1 font-mono'>aaminagate92@gmail.com</p>
                   </div>
                 </div>
 
