@@ -83,7 +83,7 @@ export const CATEGORIES: Category[] = [
     id: 'trees',
     name: 'Trees',
     description: 'Premium trees for wholesale export.',
-    image: 'public/images/Trees (D)/7 Chakra Crystal Tree 300 bids 1 (5)/WhatsApp Image 2026-07-03 at 10.43.16 AM.jpeg',
+    image: '/images/Trees (D)/7 Chakra Crystal Tree 300 bids 1 (5)/WhatsApp Image 2026-07-03 at 10.43.16 AM.jpeg',
     featured: false,
   },
   {
