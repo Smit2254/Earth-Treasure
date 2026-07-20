@@ -242,7 +242,7 @@ export default function App() {
 
                 {/* Horizontal flow product scroll */}
                 <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-4' id='carousel-grid'>
-                  {PRODUCTS.slice(0, 4).map((prod) => (
+                  {PRODUCTS.slice(20, 24).map((prod) => (
                     <div
                       key={prod.id}
                       className='group bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg hover:border-[#D4AF37]/50 transition duration-300 flex flex-col justify-between text-left'
@@ -262,7 +262,7 @@ export default function App() {
                       <div className='p-4 space-y-2 flex-grow flex flex-col justify-between'>
                         <div className='space-y-1'>
                           <h4 className='font-serif text-sm font-bold text-slate-800 line-clamp-1'>{prod.name}</h4>
-                          <p className='text-[11px] text-slate-500 line-clamp-2 leading-relaxed'>{prod.description}</p>
+                          {/* <p className='text-[11px] text-slate-500 line-clamp-2 leading-relaxed'>{prod.description}</p> */}
                         </div>
 
                         <div className='pt-2.5 border-t border-slate-100 mt-2 space-y-3'>
@@ -360,7 +360,7 @@ export default function App() {
                   <div className='relative'>
                     <div className='relative border-2 border-[#D4AF37]/30 rounded-2xl p-[3px] bg-slate-50 shadow-xl overflow-hidden'>
                       <img
-                        src='/images/factory_export_1781424069102.jpg'
+                        src='/Images/factory_export_1781424069102.jpg'
                         alt='Master craftsman examining large raw geode for shipping'
                         className='rounded-xl w-full object-cover aspect-[4/3] pointer-events-none'
                         referrerPolicy='no-referrer'

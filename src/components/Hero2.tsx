@@ -8,10 +8,10 @@ interface HeroProps {
 
 export default function Hero({ onExploreClick, onRequestQuoteClick }: HeroProps) {
   const heroImages = [
-    '/images/crystal_spheres_1781424052980.jpg',
-    '/images/crystal_towers_1781424039362.jpg',
-    '/images/factory_export_1781424069102.jpg',
-    '/images/hero_crystal_banner_1781424019643.jpg',
+    '/Images/crystal_spheres_1781424052980.jpg',
+    '/Images/crystal_towers_1781424039362.jpg',
+    '/Images/factory_export_1781424069102.jpg',
+    '/Images/hero_crystal_banner_1781424019643.jpg',
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
