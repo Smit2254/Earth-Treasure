@@ -240,7 +240,7 @@ export default function AboutUs() {
 
               <div className='mt-6 flex gap-3'>
                 <a
-                  href='/Images/CDOPV1894A.pdf'
+                  href='/images/CDOPV1894A.pdf'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='inline-flex items-center gap-2 rounded-full border border-[#D4AF37]/30 px-4 py-2 text-sm text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-all'
@@ -250,7 +250,7 @@ export default function AboutUs() {
                 </a>
 
                 <a
-                  href='/Images/CDOPV1894A.pdf'
+                  href='/images/CDOPV1894A.pdf'
                   download='EarthTreasure-IEC-Certificate.pdf'
                   className='inline-flex items-center gap-2 rounded-full bg-[#D4AF37] px-4 py-2 text-sm font-medium text-emerald-950 hover:bg-amber-400 transition-all'
                 >
@@ -277,7 +277,7 @@ export default function AboutUs() {
 
               <div className='mt-6 flex gap-3'>
                 <a
-                  href='/Images/GST Certificate.pdf'
+                  href='/images/GST Certificate.pdf'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='inline-flex items-center gap-2 rounded-full border border-[#D4AF37]/30 px-4 py-2 text-sm text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-all'
@@ -287,7 +287,7 @@ export default function AboutUs() {
                 </a>
 
                 <a
-                  href='/Images/GST Certificate.pdf'
+                  href='/images/GST Certificate.pdf'
                   download='EarthTreasure-GST-Certificate.pdf'
                   className='inline-flex items-center gap-2 rounded-full bg-[#D4AF37] px-4 py-2 text-sm font-medium text-emerald-950 hover:bg-amber-400 transition-all'
                 >
@@ -314,7 +314,7 @@ export default function AboutUs() {
 
               <div className='mt-6 flex gap-3'>
                 <a
-                  href='/Images/Udyam Registration Certificate.pdf'
+                  href='/images/Udyam Registration Certificate.pdf'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='inline-flex items-center gap-2 rounded-full border border-[#D4AF37]/30 px-4 py-2 text-sm text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-all'
@@ -324,7 +324,7 @@ export default function AboutUs() {
                 </a>
 
                 <a
-                  href='/Images/Udyam Registration Certificate.pdf'
+                  href='/images/Udyam Registration Certificate.pdf'
                   download='EarthTreasure-Udyam-Certificate.pdf'
                   className='inline-flex items-center gap-2 rounded-full bg-[#D4AF37] px-4 py-2 text-sm font-medium text-emerald-950 hover:bg-amber-400 transition-all'
                 >

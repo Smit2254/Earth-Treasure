@@ -360,7 +360,7 @@ export default function App() {
                   <div className='relative'>
                     <div className='relative border-2 border-[#D4AF37]/30 rounded-2xl p-[3px] bg-slate-50 shadow-xl overflow-hidden'>
                       <img
-                        src='/Images/factory_export_1781424069102.jpg'
+                        src='/images/factory_export_1781424069102.jpg'
                         alt='Master craftsman examining large raw geode for shipping'
                         className='rounded-xl w-full object-cover aspect-[4/3] pointer-events-none'
                         referrerPolicy='no-referrer'
