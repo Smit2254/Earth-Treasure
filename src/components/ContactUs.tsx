@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, MessageSquare, ShieldCheck, Globe, CheckCircle2, Trophy } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { Category, InquiryFormData } from '../types';
 
 interface ContactUsProps {

@@ -17,7 +17,7 @@ export default function CategoryShowcase({ categories, onSelectCategory }: Categ
           <h2 className='font-serif text-3xl md:text-4xl font-bold text-white tracking-tight'>
             Worldwide Crystal Products Curation
           </h2>
-          <div className='h-[2px] w-16 bg-[#D4AF37] mx-auto opacity-80' />
+          <div className='h-[2px] max-w-[250px] bg-[#D4AF37] mx-auto opacity-80 items-center hidden ad:flex' />
           <p className='text-sm text-slate-300'>
             Select a raw mining category or polished gemstone classification below. Each batch is curated to secure
             export certification standards, complete with custom sizing, sorting, and wholesale pricing.

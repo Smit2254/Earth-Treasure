@@ -1,6 +1,10 @@
 @import 'tailwindcss';
 
 @theme {
+  --breakpoint-ad: 457px;
+}
+
+@theme {
   --font-serif: 'Cormorant Garamond', Georgia, Cambria, 'Times New Roman', Times, serif;
   --font-sans:
     'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -93,4 +97,13 @@ input[type='range']::-webkit-slider-thumb {
 
 .animate-slowZoom {
   animation: slowZoom 8s ease-in-out infinite alternate;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

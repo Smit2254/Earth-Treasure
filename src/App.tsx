@@ -188,8 +188,8 @@ export default function App() {
                       <Layers className='h-6 w-6' />
                     </div>
                     <div className='space-y-1.5'>
-                      <h4 className='font-serif text-sm font-bold text-emerald-950'>Custom Orders Available</h4>
-                      <p className='text-xs text-slate-500 leading-relaxed'>
+                      <h4 className='font-serif text-lg font-bold text-emerald-950'>Custom Orders Available</h4>
+                      <p className='text-sm text-slate-500 leading-relaxed'>
                         Our master artisans carve any dimensional specification, geode slice alignment, branded
                         packaging, or custom wellness tools according to your specifications.
                       </p>
@@ -202,8 +202,8 @@ export default function App() {
                       <Truck className='h-6 w-6' />
                     </div>
                     <div className='space-y-1.5'>
-                      <h4 className='font-serif text-sm font-bold text-emerald-950'>Secure Worldwide Shipping</h4>
-                      <p className='text-xs text-slate-500 leading-relaxed'>
+                      <h4 className='font-serif text-lg font-bold text-emerald-950'>Secure Worldwide Shipping</h4>
+                      <p className='text-sm text-slate-500 leading-relaxed'>
                         Shock-insulated foam packaging and custom-fumigated timber pallets. We maintain contract
                         agreements with elite global freight forwarding networks.
                       </p>
