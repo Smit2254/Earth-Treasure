@@ -108,6 +108,9 @@ export default function App() {
               onRequestQuoteClick={() => setActiveTab('contact')}
             />
 
+            {/* DYNAMIC PRODUCT CATEGORIES GRID SHOWCASE */}
+            <CategoryShowcase categories={CATEGORIES} onSelectCategory={handleSelectCategoryFromGrid} />
+
             {/* WHY CHOOSE EARTH TREASURE (B2B features) */}
             <section className='py-16 bg-white border-b border-slate-100' id='why-choose-us'>
               <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
@@ -213,9 +216,6 @@ export default function App() {
               </div>
             </section>
 
-            {/* DYNAMIC PRODUCT CATEGORIES GRID SHOWCASE */}
-            <CategoryShowcase categories={CATEGORIES} onSelectCategory={handleSelectCategoryFromGrid} />
-
             {/* BEST SELLER FEATURED PRODUCT CAROUSEL */}
             <section className='py-16 bg-slate-50 border-t border-b border-slate-200' id='featured-carousel-block'>
               <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
@@ -235,7 +235,7 @@ export default function App() {
                     }}
                     className='flex items-center gap-1.5 text-xs font-mono text-emerald-900 uppercase font-bold tracking-wider hover:text-emerald-700 transition'
                   >
-                    <span>View Full 4,000+ Catalog List</span>
+                    <span>View Full Catalog List</span>
                     <ChevronRight className='h-4 w-4' />
                   </button>
                 </div>
