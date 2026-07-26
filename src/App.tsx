@@ -241,11 +241,11 @@ export default function App() {
                 </div>
 
                 {/* Horizontal flow product scroll */}
-                <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-4' id='carousel-grid'>
-                  {PRODUCTS.slice(20, 24).map((prod) => (
+                <div className='flex gap-6 overflow-x-auto pb-4 scrollbar-hide' id='carousel-grid'>
+                  {PRODUCTS.slice(30, 50).map((prod) => (
                     <div
                       key={prod.id}
-                      className='group bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg hover:border-[#D4AF37]/50 transition duration-300 flex flex-col justify-between text-left'
+                      className='group flex-shrink-0 basis-1/4 bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg hover:border-[#D4AF37]/50 transition duration-300 flex flex-col justify-between text-left'
                     >
                       <div className='relative aspect-square bg-slate-50'>
                         <img
