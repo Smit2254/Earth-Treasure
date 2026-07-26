@@ -245,7 +245,7 @@ export default function App() {
                   {PRODUCTS.slice(30, 50).map((prod) => (
                     <div
                       key={prod.id}
-                      className='group flex-shrink-0 basis-1/4 bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg hover:border-[#D4AF37]/50 transition duration-300 flex flex-col justify-between text-left'
+                      className='group flex-shrink-0 w-[85%] sm:w-[45%] lg:w-[24%] bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg hover:border-[#D4AF37]/50 transition duration-300 flex flex-col justify-between text-left'
                     >
                       <div className='relative aspect-square bg-slate-50'>
                         <img
