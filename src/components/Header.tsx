@@ -1,40 +1,49 @@
-import React, { useState } from 'react';
-import { Gem, Menu, X, Search, Globe, ChevronDown } from 'lucide-react';
+import { useState } from 'react';
+import { Menu, X, Search, Globe, ChevronDown } from 'lucide-react';
 import { Category } from '../types';
+import { useNavigate, useLocation } from 'react-router';
 
 interface HeaderProps {
-  activeTab: string;
-  setActiveTab: (tab: string) => void;
   categories: Category[];
-  setSelectedCategory: (catId: string | null) => void;
   searchQuery: string;
   setSearchQuery: (query: string) => void;
 }
 
-export default function Header({
-  activeTab,
-  setActiveTab,
-  categories,
-  setSelectedCategory,
-  searchQuery,
-  setSearchQuery,
-}: HeaderProps) {
+export default function Header({ categories, searchQuery, setSearchQuery }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showCatDropdown, setShowCatDropdown] = useState(false);
 
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const activeTab =
+    location.pathname === '/'
+      ? 'home'
+      : location.pathname.startsWith('/products')
+        ? 'products'
+        : location.pathname.startsWith('/about')
+          ? 'about'
+          : location.pathname.startsWith('/contact')
+            ? 'contact'
+            : '';
+
   const handleCategoryClick = (catId: string) => {
-    setSelectedCategory(catId);
-    setActiveTab('products');
+    navigate(`/products/${catId}`);
     setShowCatDropdown(false);
     setMobileMenuOpen(false);
   };
 
   const handleNavClick = (tab: string) => {
-    setActiveTab(tab);
+    const routes: Record<string, string> = {
+      home: '/',
+      products: '/products',
+      about: '/about',
+      contact: '/contact',
+    };
+
+    navigate(routes[tab]);
     setMobileMenuOpen(false);
-    if (tab !== 'products') {
-      setSelectedCategory(null);
-    }
+    setShowCatDropdown(false);
   };
 
   return (
@@ -109,8 +118,7 @@ export default function Header({
                 <div className='py-1'>
                   <button
                     onClick={() => {
-                      setSelectedCategory(null);
-                      setActiveTab('products');
+                      navigate('/products');
                       setShowCatDropdown(false);
                     }}
                     className='flex w-full items-center px-4 py-2 text-xs font-mono tracking-wider text-[#D4AF37] uppercase hover:bg-emerald-900/40 rounded-lg text-left'
@@ -168,8 +176,9 @@ export default function Header({
               value={searchQuery}
               onChange={(e) => {
                 setSearchQuery(e.target.value);
-                if (activeTab !== 'products') {
-                  setActiveTab('products');
+
+                if (!location.pathname.startsWith('/products')) {
+                  navigate('/products');
                 }
               }}
               className='w-full rounded-full border border-[#D4AF37]/20 bg-emerald-900/30 py-2 pl-9 pr-4 text-xs tracking-wide text-white placeholder-emerald-100/50 outline-none focus:border-[#D4AF37]/60 focus:bg-emerald-900/50 focus:ring-1 focus:ring-[#D4AF37]/50'
@@ -219,8 +228,9 @@ export default function Header({
                 value={searchQuery}
                 onChange={(e) => {
                   setSearchQuery(e.target.value);
-                  if (activeTab !== 'products') {
-                    setActiveTab('products');
+
+                  if (!location.pathname.startsWith('/products')) {
+                    navigate('/products');
                   }
                 }}
                 className='w-full rounded-lg border border-[#D4AF37]/20 bg-emerald-900/40 py-2 pl-9 pr-4 text-xs text-white placeholder-emerald-100/40 outline-none'
@@ -244,8 +254,7 @@ export default function Header({
               </p>
               <button
                 onClick={() => {
-                  setSelectedCategory(null);
-                  setActiveTab('products');
+                  navigate('/products');
                   setMobileMenuOpen(false);
                 }}
                 className='block w-full rounded-lg px-2 py-1 text-left text-[13px] text-slate-300 hover:bg-emerald-900/40 font-semibold'

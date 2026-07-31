@@ -1,24 +1,29 @@
-import React from 'react';
-import { Gem, ShieldAlert, Globe, Ship, Mail, Phone, Calendar } from 'lucide-react';
+import { Gem, ShieldAlert, Globe, Ship, Mail, Phone } from 'lucide-react';
 import { Category } from '../types';
 import { FaInstagram } from 'react-icons/fa';
+import { useNavigate } from 'react-router';
 
 interface FooterProps {
   categories: Category[];
-  setActiveTab: (tab: string) => void;
-  setSelectedCategory: (catId: string | null) => void;
 }
 
-export default function Footer({ categories, setActiveTab, setSelectedCategory }: FooterProps) {
+export default function Footer({ categories }: FooterProps) {
+  const navigate = useNavigate();
+
   const handleCategoryNav = (catId: string) => {
-    setSelectedCategory(catId);
-    setActiveTab('products');
+    navigate(`/products/${catId}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleNavClick = (tab: string) => {
-    setSelectedCategory(null);
-    setActiveTab(tab);
+    const routes: Record<string, string> = {
+      home: '/',
+      products: '/products',
+      about: '/about',
+      contact: '/contact',
+    };
+
+    navigate(routes[tab]);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -123,10 +128,7 @@ export default function Footer({ categories, setActiveTab, setSelectedCategory }
             ))}
             <li>
               <button
-                onClick={() => {
-                  setSelectedCategory(null);
-                  setActiveTab('products');
-                }}
+                onClick={() => navigate('/products')}
                 className='hover:text-[#D4AF37] text-[#D4AF37] text-left transition font-semibold'
               >
                 View All Categories...
