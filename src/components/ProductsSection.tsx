@@ -26,21 +26,12 @@ export default function ProductsSection({
   onOpenInquiryBag,
 }: ProductsSectionProps) {
   // Navigation states
-  const [selectedCrystalType, setSelectedCrystalType] = useState<string>('All');
   const [selectedAvailability, setSelectedAvailability] = useState<string>('All');
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [maxPrice, setMaxPrice] = useState<number>(2500);
   const [sortBy, setSortBy] = useState<string>('default');
 
   // Get all unique crystal types in dataset for filter option
-  const crystalTypes = useMemo(() => {
-    const types = new Set<string>();
-    products.forEach((p) => {
-      if (p.crystalType) types.add(p.crystalType);
-    });
-    return ['All', ...Array.from(types)];
-  }, [products]);
-
   // States to animate added feedbacks
   const [addedProductIds, setAddedProductIds] = useState<Record<string, boolean>>({});
 
@@ -55,7 +46,6 @@ export default function ProductsSection({
   // Reset all filters easily
   const resetFilters = () => {
     setSelectedCategory(null);
-    setSelectedCrystalType('All');
     setSelectedAvailability('All');
     setMaxPrice(2500);
     setSortBy('default');
@@ -71,13 +61,13 @@ export default function ProductsSection({
         if (
           searchQuery &&
           !p.name.toLowerCase().includes(searchQuery.toLowerCase()) &&
-          !p.description.toLowerCase().includes(searchQuery.toLowerCase()) &&
-          !p.crystalType.toLowerCase().includes(searchQuery.toLowerCase())
+          !p.category.toLowerCase().includes(searchQuery.toLowerCase()) &&
+          !p.purity.toLowerCase().includes(searchQuery.toLowerCase()) &&
+          !p.origin.toLowerCase().includes(searchQuery.toLowerCase())
         ) {
           return false;
         }
         // Crystal Type Filter
-        if (selectedCrystalType !== 'All' && p.crystalType !== selectedCrystalType) return false;
         // Availability Filter
         if (selectedAvailability !== 'All' && p.availability !== selectedAvailability) return false;
         // Price Filter
@@ -90,7 +80,7 @@ export default function ProductsSection({
         if (sortBy === 'moq-asc') return a.moq - b.moq;
         return 0; // Default ordering
       });
-  }, [products, selectedCategory, searchQuery, selectedCrystalType, selectedAvailability, maxPrice, sortBy]);
+  }, [products, selectedCategory, searchQuery, selectedAvailability, maxPrice, sortBy]);
 
   return (
     <>
@@ -171,24 +161,6 @@ export default function ProductsSection({
                       </button>
                     ))}
                   </div>
-                </div>
-
-                {/* Crystal Type Filter Group */}
-                <div className='space-y-2'>
-                  <span className='text-xs font-mono font-bold uppercase text-emerald-900 tracking-wider'>
-                    Crystal Type
-                  </span>
-                  <select
-                    value={selectedCrystalType}
-                    onChange={(e) => setSelectedCrystalType(e.target.value)}
-                    className='w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs text-slate-700 outline-none focus:border-emerald-800'
-                  >
-                    {crystalTypes.map((t) => (
-                      <option key={t} value={t}>
-                        {t}
-                      </option>
-                    ))}
-                  </select>
                 </div>
 
                 {/* Availability Filter Group */}
@@ -372,7 +344,6 @@ export default function ProductsSection({
                         <h4 className='font-serif text-base font-bold text-slate-800 line-clamp-1 group-hover:text-emerald-950'>
                           {product.name}
                         </h4>
-                        <p className='text-xs text-slate-500 line-clamp-3 leading-relaxed'>{product.description}</p>
 
                         {/* Technical Specs Detail Rows */}
                         <div className='grid grid-cols-2 gap-2 bg-slate-50 p-2 rounded-lg border border-slate-100 text-xs font-mono mt-2'>
