@@ -28,7 +28,7 @@ export default function ProductsSection({
   // Navigation states
   const [selectedAvailability, setSelectedAvailability] = useState<string>('All');
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [maxPrice, setMaxPrice] = useState<number>(2500);
+  const [maxPrice, setMaxPrice] = useState<number>(500);
   const [sortBy, setSortBy] = useState<string>('default');
 
   // Get all unique crystal types in dataset for filter option
@@ -47,7 +47,7 @@ export default function ProductsSection({
   const resetFilters = () => {
     setSelectedCategory(null);
     setSelectedAvailability('All');
-    setMaxPrice(2500);
+    setMaxPrice(500);
     setSortBy('default');
   };
 
