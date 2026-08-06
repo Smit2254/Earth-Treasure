@@ -195,16 +195,16 @@ export default function ProductsSection({
                   </div>
                   <input
                     type='range'
-                    min='5'
-                    max='2500'
+                    min='1'
+                    max='500'
                     step='5'
                     value={maxPrice}
                     onChange={(e) => setMaxPrice(Number(e.target.value))}
                     className='w-full h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-900'
                   />
                   <div className='flex justify-between text-[10px] font-mono text-slate-400'>
-                    <span>$5</span>
-                    <span>$2500</span>
+                    <span>$1</span>
+                    <span>$500</span>
                   </div>
                 </div>
 
